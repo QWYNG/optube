@@ -22,7 +22,7 @@ function championIcon(champion: Champion, selectedChampion: Champion, selectCham
         alt={`${champion.id} icon`}
         width={64}
         height={66}
-        loading={'eager'}
+        priority={true}
         className={(selectedChampion.id == champion.id) ? styles.selected : styles.not_selected}
       />
     </Col>

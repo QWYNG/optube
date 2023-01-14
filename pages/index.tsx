@@ -129,7 +129,7 @@ export default function Home({ topChampions, jgChampions, midChampions, botChamp
     latestPatchDate: string
   }) {
   const [locale, setLocal] = useState<Locale>('JP')
-  const [onlyLatestPatch, setonlyLatestPatch] = useState(true)
+  const [onlyLatestPatch, setonlyLatestPatch] = useState(false)
   const [selectedChampion, selectChampion] = useState<Champion>(topChampions[0])
   return (
     <>

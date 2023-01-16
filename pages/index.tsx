@@ -16,13 +16,12 @@ import { bulidYoutubeUrlWithSearchQuery } from '../lib/youtube';
 function championIcon(champion: Champion, selectedChampion: Champion, selectChampion: Dispatch<SetStateAction<Champion>>) {
   return (
     <Col key={champion.id} onClick={e => selectChampion(champion)}>
-      <Image
+      <img
         key={champion.id}
         src={champion.iconUrl}
         alt={`${champion.id} icon`}
         width={64}
         height={66}
-        priority={true}
         className={(selectedChampion.id == champion.id) ? styles.selected : styles.not_selected}
       />
     </Col>
